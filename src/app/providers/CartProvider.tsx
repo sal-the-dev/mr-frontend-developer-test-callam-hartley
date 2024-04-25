@@ -37,9 +37,6 @@ function cartReducer(cart: Cart, action: Action): Cart {
 	const { product, sizeID } = action;
 	switch (action.type) {
 		case 'add': {
-			console.log('Product added to cart');
-			console.log('action', action);
-			console.log('previous cart', cart);
 			return {
 				...cart,
 				[product.id]: {
