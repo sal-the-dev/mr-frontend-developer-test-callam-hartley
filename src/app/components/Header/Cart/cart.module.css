@@ -1,0 +1,48 @@
+.cart {
+	position: relative;
+}
+
+.cartButton {
+	--border-color: transparent;
+	--border: 1px solid var(--border-color);
+	color: var(--fontLight);
+	z-index: 1;
+	position: relative;
+	cursor: pointer;
+	border-top: var(--border);
+	border-left: var(--border);
+	border-right: var(--border);
+}
+.cartButton[data-active='true'] {
+	--border-color: var(--lightGrey);
+	color: var(--fontDark);
+	background-color: white;
+}
+
+.cartDropdownContainer {
+	position: absolute;
+	bottom: 1px;
+	transform: translateY(100%);
+	z-index: 0;
+	border: 1px solid var(--lightGrey);
+	right: 0;
+	background-color: white;
+	display: flex;
+	flex-flow: column;
+	width: 250px;
+	gap: 15px;
+	padding: 20px;
+	max-width: 100vw;
+}
+
+.cartItemContainer {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 10px;
+}
+
+.cartItemDetails {
+	display: flex;
+	flex-flow: column;
+	gap: 10px;
+}

@@ -1,0 +1,35 @@
+.sizeButton {
+	padding: 1em;
+	background-color: transparent;
+	--color: var(--fontLight);
+	box-shadow: inset 0px 0px 0px 1px var(--color);
+	border: none;
+	color: var(--color);
+	cursor: pointer;
+}
+.sizeButton[data-selected='true'] {
+	--color: var(--fontDark);
+	box-shadow: inset 0px 0px 0px 2px var(--color);
+}
+
+.sizeContainer {
+	display: flex;
+	flex-flow: column nowrap;
+	gap: 0.5em;
+}
+
+.sizeButtons {
+	display: flex;
+	flex-flow: row nowrap;
+	gap: 0.5rem;
+}
+
+.sizeInputLabel {
+	text-transform: uppercase;
+	color: var(--fontLight);
+}
+
+.selectedSizeLabel {
+	color: var(--fontDark);
+	font-weight: bold;
+}

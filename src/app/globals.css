@@ -1,3 +1,12 @@
+:root {
+	--lightGrey: #cccccc;
+	--darkGrey: #222222;
+	--required: #c90000;
+	--fontLight: #888888;
+	--fontDark: var(--darkGrey);
+	--grey: #f6f6f7;
+}
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -13,4 +22,8 @@ body {
 a {
 	color: inherit;
 	text-decoration: none;
+}
+
+.required {
+	color: var(--required);
 }
